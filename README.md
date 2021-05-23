@@ -2,27 +2,27 @@
 
 # SciTool
 
-SciTool es una librería JavaScript para especialistas y no-especialistas en desarrollo de software, diseñada para escribir 100% en JavaScript el front-end de aplicaciones web, facilitando la creación de proyectos de software, especialmente de Data Science. La interfaz de usuario se basa en un escritorio ilimitado con ventanas flotantes que permiten multitarea, llamadas **Documentos**.
+SciTool es una librería JavaScript para especialistas y no-especialistas en desarrollo de software, diseñada para escribir 100% en JavaScript el front-end de aplicaciones web, facilitando el desarrollo, especialmente en proyectos de Data Science. La interfaz de usuario se basa en un escritorio ilimitado con ventanas flotantes que permiten multitarea, llamadas **Documentos**.
 
 ## Uso
 
-Descarga scitool.js e impórtalo en el <head> como cualquier librería en el index.html, y escribe el programa con las sentencias de SciTool dentro del <body> o en archivos .js como componentes.
-Se recomienda que cada documento (ventana) se escriba en un archivo aparte, para lograr una estructura clara que ayudará a la mantención o actualización del software, y que además permite su reutilización en otros proyectos.
-Crear una aplicación web es tan sencillo como escribir AddDocument, AddButton, AddLabel, etc. para una interfaz de usuario, y codificar sus eventos que SciTool crea automáticamente como funciones llamadas igual que los controles creados más el nombre del evento.
+Se debe incorporar el archivo scitool.js en el index.html como cualquier librería, y escribir el programa con JavaScript y SciTool dentro del "<body>" o en archivos .js como componentes.
+Se recomienda que cada documento (ventana) o componente se escriba en un archivo aparte, para lograr una estructura clara que ayude a la mantención o actualización del software, y que además permita su reutilización en otros proyectos.
+Crear una aplicación web es tan sencillo como escribir AddDocument, AddButton, AddLabel, etc. para crear una interfaz de usuario, y codificar sus eventos que SciTool crea automáticamente como funciones nombradas con el mismo nombre de los objetos más el nombre del evento.
 
 ### Características:
 
-- Los documentos (ventanas) se muestran al usuario instantáneamente, sin que deba esperar su descarga desde internet como sucede con las páginas web, pues ya se descargaron en segundo plano al inicio.
+- Los documentos se muestran al usuario instantáneamente, sin que deba esperar su descarga desde internet como sucede con las páginas web tradicionales, pues ya se descargaron en segundo plano al inicio.
 
 - Cada documento puede escribirse en un archivo con la interfaz de usuario, datos y métodos, como un componente completo.
 
-- No se requiere crear funciones de eventos. Todos los eventos están listos para ser programados en funciones: function NombreObjeto_OnNombreEvento() {código...}
+- No se requiere crear funciones de eventos. Estos están listos para ser programados en funciones como: function NombreObjeto_OnNombreEvento() {código...}
 
-- Los documentos no se deben referenciar entre sí ni a sus objetos, permitiendo documentos completamente reutilizables en otros proyectos. Esto se puede conseguir porque cada objeto dispone de un método *Talk* a través del cual se emite un mensaje, y cada objeto posee también un método *Listen* que escucha todo mensaje dicho por cualquier objeto, de modo de poder programar las reacciones que correspondan en los objetos que deban reaccionar a uno o más mensajes en particular.
+- Los componentes no se deben referenciar entre sí ni a sus objetos, para lograr componentes completamente reutilizables. Esto se puede conseguir porque cada objeto dispone de un método *Talk* a través del cual emitir mensajes, y un método *Listen* que escucha a todos los demás, de modo de poder programar las reacciones que correspondan en los objetos que deban reaccionar a uno o más mensajes en particular.
 
 - Se incluye validación de datos automática, como enteros, reales, rangos, alfanuméricos, etc.
 
-- Además, el usuario dispone de un escritorio con infinitas mesas de trabajo para organizar sus documentos como desee.
+- Además, el usuario dispone de un escritorio ilimitado con infinitas mesas de trabajo para organizar sus documentos como desee.
   
 ### ¡Hola mundo!
 
